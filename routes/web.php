@@ -74,5 +74,5 @@ Route::get('/stations', function () {
 })->name('stations');
 
 Route::get('/analyse', function () {
-    return view('users', Pager::create('Analyseer', '', 'Analyseer stations')->export());
+    return view('analyze', Pager::create('Analyseer', '', 'Analyseer stations')->export());
 })->name('analyse');
