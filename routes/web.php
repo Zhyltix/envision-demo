@@ -70,7 +70,7 @@ Route::get('/users', function () {
 })->name('users');
 
 Route::get('/stations', function () {
-    return view('users', Pager::create('stations', '', 'Weer stations')->export());
+    return view('stations', Pager::create('stations', '', 'Weer stations')->export());
 })->name('stations');
 
 Route::get('/analyse', function () {
